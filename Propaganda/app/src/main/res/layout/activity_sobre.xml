@@ -9,28 +9,40 @@
 
     <TextView
         android:id="@+id/txtTitulo2"
-        android:layout_width="242dp"
-        android:layout_height="51dp"
+        android:layout_width="257dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginBottom="51dp"
         android:text="ChocoFeliz"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         android:textColor="#3F9CC6"
-        tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="115dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="391dp"
-        android:layout_height="268dp"
+        android:layout_width="228dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="39dp"
         android:text="Nossa fábrica trabalha com chocolates"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="231dp" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toTopOf="@+id/btnVoltarMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo2" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnVoltarMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
         android:text="Voltar para o menu"
-        tools:layout_editor_absoluteX="106dp"
-        tools:layout_editor_absoluteY="547dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

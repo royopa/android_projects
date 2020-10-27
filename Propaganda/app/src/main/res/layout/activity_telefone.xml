@@ -7,30 +7,42 @@
     android:background="#CF2D21"
     tools:context=".TelefoneActivity">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Voltar para o menu"
-        tools:layout_editor_absoluteX="106dp"
-        tools:layout_editor_absoluteY="425dp" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="317dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="71dp"
+        android:text="Tel: 11 99999-9999"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toTopOf="@+id/btnVoltarMenu2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo3" />
 
     <TextView
         android:id="@+id/txtTitulo3"
-        android:layout_width="242dp"
-        android:layout_height="51dp"
+        android:layout_width="261dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="131dp"
+        android:layout_marginBottom="87dp"
         android:text="ChocoFeliz"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         android:textColor="#3F9CC6"
-        tools:layout_editor_absoluteX="84dp"
-        tools:layout_editor_absoluteY="119dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.401"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="411dp"
-        android:layout_height="97dp"
-        android:text="Tel: 11 99999-9999"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="257dp" />
+    <Button
+        android:id="@+id/btnVoltarMenu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="246dp"
+        android:text="Voltar para o menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
